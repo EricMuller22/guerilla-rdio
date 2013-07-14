@@ -1,0 +1,10 @@
+PODS:
+  - CocoaLibSpotify (2.4.2)
+
+DEPENDENCIES:
+  - CocoaLibSpotify (~> 2.4.2)
+
+SPEC CHECKSUMS:
+  CocoaLibSpotify: e31e1e578def7c78ad9bbe8b22ab704a15969fbf
+
+COCOAPODS: 0.22.2
