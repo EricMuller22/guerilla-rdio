@@ -8,6 +8,11 @@
 
 #import "AlbumViewController.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
+#import <AFNetworking/AFImageRequestOperation.h>
+#import <UIImage+StackBlur.h>
+#import <UIImage+Resize.h>
+
+#define url [NSURL URLWithString:@"http://ecx.images-amazon.com/images/I/917Z407djoL._SL1500_.jpg"]
 
 @interface AlbumViewController ()
 
@@ -27,6 +32,7 @@
         
         // blurred album art placeholder
         _bgView = [[UIImageView alloc] initWithFrame:self.view.frame];
+        [_bgView setContentMode:UIViewContentModeCenter];
         
         [self.view addSubview:_bgView];
         [self.view addSubview:_albumView];
@@ -36,8 +42,20 @@
 
 - (void)viewWillAppear:(BOOL)animate
 {
-    NSURL *url = [NSURL URLWithString:@"http://ecx.images-amazon.com/images/I/917Z407djoL._SL1500_.jpg"];
     [self.albumView setImageWithURL:url];
+    
+    __weak AlbumViewController *weakSelf = self;
+    AFImageRequestOperation *operation = [AFImageRequestOperation imageRequestOperationWithRequest:[NSURLRequest requestWithURL:url]
+                                                                                           success:^(UIImage *image) {
+                                                                                               weakSelf.bgView.image = [image stackBlur:7];
+                                                                                           }];
+
+    [operation start];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 @end

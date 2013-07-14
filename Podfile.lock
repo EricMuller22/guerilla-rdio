@@ -1,13 +1,19 @@
 PODS:
   - AFNetworking (1.3.1)
   - CocoaLibSpotify (2.4.2)
+  - StackBluriOS (0.0.1)
+  - UIImage-Resize (0.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 1.3.1)
   - CocoaLibSpotify (~> 2.4.2)
+  - StackBluriOS (~> 0.0.1)
+  - UIImage-Resize (~> 0.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 9ec8aafb9269236a7630bd8d9838ce2ba30fa2a0
   CocoaLibSpotify: e31e1e578def7c78ad9bbe8b22ab704a15969fbf
+  StackBluriOS: dd039bb5ff23a3dd370853202d38dec815970e5b
+  UIImage-Resize: 8372efb7144f060a3482c8915388829787fe4b7c
 
 COCOAPODS: 0.22.2
