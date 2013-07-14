@@ -11,6 +11,7 @@
 #import <AFNetworking/AFImageRequestOperation.h>
 #import <UIImage+StackBlur.h>
 #import <UIImage+Resize.h>
+#import "PlayerViewController.h"
 
 // a few album art samples
 #define prettyLights @"http://ecx.images-amazon.com/images/I/917Z407djoL._SL1500_.jpg"
@@ -23,6 +24,7 @@
 
 @property (nonatomic, strong) UIImageView *albumView;
 @property (nonatomic, strong) UIImageView *bgView;
+@property (nonatomic, strong) PlayerViewController *playerVC;
 
 @end
 
@@ -33,7 +35,7 @@
     self = [super init];
     if (self) {
         // album art
-        _albumView = [[UIImageView alloc] initWithFrame:CGRectMake(60,120,200,200)];
+        _albumView = [[UIImageView alloc] initWithFrame:CGRectMake(60,60,200,200)];
         
         // blurred album art placeholder
         _bgView = [[UIImageView alloc] initWithFrame:self.view.frame];
@@ -41,6 +43,13 @@
         
         [self.view addSubview:_bgView];
         [self.view addSubview:_albumView];
+        
+        // player view
+        _playerVC = [[PlayerViewController alloc] init];
+        [self addChildViewController:_playerVC];
+        _playerVC.view.frame = CGRectMake(0,320,self.view.frame.size.width, self.view.frame.size.height - 320);
+        [self.view addSubview:_playerVC.view];
+        [_playerVC didMoveToParentViewController:self];
     }
     return self;
 }
