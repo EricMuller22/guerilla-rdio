@@ -19,6 +19,7 @@
 		9B9741971792833000EDFB30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9741771792832F00EDFB30 /* Foundation.framework */; };
 		9B9741981792833000EDFB30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B97417B1792832F00EDFB30 /* UIKit.framework */; };
 		9B9741991792833000EDFB30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B97417D1792832F00EDFB30 /* CoreData.framework */; };
+		9BA55B3F1792A5C90011EAAC /* UIColor+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA55B3E1792A5C90011EAAC /* UIColor+Helpers.m */; };
 		E69A67E878254592AA2CBF0A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 168AB83EA738474FAF7C466C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,8 @@
 		9B97418E1792832F00EDFB30 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9B9741941792833000EDFB30 /* radioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = radioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9741951792833000EDFB30 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9BA55B3D1792A5C90011EAAC /* UIColor+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helpers.h"; sourceTree = "<group>"; };
+		9BA55B3E1792A5C90011EAAC /* UIColor+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helpers.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				9B9741891792832F00EDFB30 /* AppDelegate.m */,
 				9B97418E1792832F00EDFB30 /* Images.xcassets */,
 				9B9741801792832F00EDFB30 /* Supporting Files */,
+				9BA55B3D1792A5C90011EAAC /* UIColor+Helpers.h */,
+				9BA55B3E1792A5C90011EAAC /* UIColor+Helpers.m */,
 			);
 			path = radio;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B97418A1792832F00EDFB30 /* AppDelegate.m in Sources */,
+				9BA55B3F1792A5C90011EAAC /* UIColor+Helpers.m in Sources */,
 				9B9741861792832F00EDFB30 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

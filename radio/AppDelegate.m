@@ -7,13 +7,19 @@
 //
 
 #import "AppDelegate.h"
+#import "UIColor+Helpers.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
+    UIViewController *vc = [[UIViewController alloc] init];
+    // children of this vc will inherit its tint color
+    vc.view.tintColor = [UIColor colorFromRGB:0x4080cf];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.window setRootViewController:vc];
+    [self.window addSubview:vc.view];
     [self.window makeKeyAndVisible];
     return YES;
 }
