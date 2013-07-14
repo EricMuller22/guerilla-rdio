@@ -35,7 +35,7 @@
     self = [super init];
     if (self) {
         // album art
-        _albumView = [[UIImageView alloc] initWithFrame:CGRectMake(60,60,200,200)];
+        _albumView = [[UIImageView alloc] initWithFrame: CGRectMake(20, 20, 280, 280)];
         
         // blurred album art placeholder
         _bgView = [[UIImageView alloc] initWithFrame:self.view.frame];
