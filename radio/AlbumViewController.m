@@ -12,7 +12,12 @@
 #import <UIImage+StackBlur.h>
 #import <UIImage+Resize.h>
 
-#define url [NSURL URLWithString:@"http://ecx.images-amazon.com/images/I/917Z407djoL._SL1500_.jpg"]
+// a few album art samples
+#define prettyLights @"http://ecx.images-amazon.com/images/I/917Z407djoL._SL1500_.jpg"
+#define bonIver @"http://ecx.images-amazon.com/images/I/81FBQgaJ-nL._SL1425_.jpg"
+#define grizzlyBear @"http://ecx.images-amazon.com/images/I/71cSnMd1aUL._SL1129_.jpg"
+#define albumStr prettyLights
+#define url [NSURL URLWithString:albumStr]
 
 @interface AlbumViewController ()
 
