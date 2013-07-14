@@ -1,6 +1,7 @@
-Playing around with iOS 7 and libspotify
+Playing around with iOS 7, aping rdio's design a bit, and attempting to get libspotify working
 
 To run:
+
 1. Install CocoaPods http://cocoapods.org/
-2. pod install
-3. Open radio.xcworkspace
+* pod install
+* Open radio.xcworkspace
