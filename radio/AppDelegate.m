@@ -14,12 +14,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    UIViewController *vc = [[UIViewController alloc] init];
+    self.albumVC = [[AlbumViewController alloc] init];
     // children of this vc will inherit its tint color
-    vc.view.tintColor = [UIColor colorFromRGB:0x4080cf];
-    vc.view.backgroundColor = [UIColor whiteColor];
-    [self.window setRootViewController:vc];
-    [self.window addSubview:vc.view];
+    self.albumVC.view.tintColor = [UIColor colorFromRGB:0x4080cf];
+    self.albumVC.view.backgroundColor = [UIColor whiteColor];
+    [self.window setRootViewController:self.albumVC];
+    [self.window addSubview:self.albumVC.view];
     [self.window makeKeyAndVisible];
     return YES;
 }

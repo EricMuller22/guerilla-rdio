@@ -20,6 +20,7 @@
 		9B9741981792833000EDFB30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B97417B1792832F00EDFB30 /* UIKit.framework */; };
 		9B9741991792833000EDFB30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B97417D1792832F00EDFB30 /* CoreData.framework */; };
 		9BA55B3F1792A5C90011EAAC /* UIColor+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA55B3E1792A5C90011EAAC /* UIColor+Helpers.m */; };
+		9BA55B421792B07C0011EAAC /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA55B411792AFF50011EAAC /* AlbumViewController.m */; };
 		E69A67E878254592AA2CBF0A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 168AB83EA738474FAF7C466C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		9B9741951792833000EDFB30 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9BA55B3D1792A5C90011EAAC /* UIColor+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helpers.h"; sourceTree = "<group>"; };
 		9BA55B3E1792A5C90011EAAC /* UIColor+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helpers.m"; sourceTree = "<group>"; };
+		9BA55B401792AFF50011EAAC /* AlbumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		9BA55B411792AFF50011EAAC /* AlbumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 			children = (
 				9B9741881792832F00EDFB30 /* AppDelegate.h */,
 				9B9741891792832F00EDFB30 /* AppDelegate.m */,
+				9BA55B401792AFF50011EAAC /* AlbumViewController.h */,
+				9BA55B411792AFF50011EAAC /* AlbumViewController.m */,
 				9B97418E1792832F00EDFB30 /* Images.xcassets */,
 				9B9741801792832F00EDFB30 /* Supporting Files */,
 				9BA55B3D1792A5C90011EAAC /* UIColor+Helpers.h */,
@@ -185,11 +190,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Unexplored Novelty, LLC";
-				TargetAttributes = {
-					9B9741931792833000EDFB30 = {
-						TestTargetID = 9B9741731792832E00EDFB30;
-					};
-				};
 			};
 			buildConfigurationList = 9B97416F1792832E00EDFB30 /* Build configuration list for PBXProject "radio" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -266,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA55B421792B07C0011EAAC /* AlbumViewController.m in Sources */,
 				9B97418A1792832F00EDFB30 /* AppDelegate.m in Sources */,
 				9BA55B3F1792A5C90011EAAC /* UIColor+Helpers.m in Sources */,
 				9B9741861792832F00EDFB30 /* main.m in Sources */,
@@ -400,7 +401,6 @@
 		9B9741AA1792833000EDFB30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/radio.app/radio";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -414,7 +414,6 @@
 				);
 				INFOPLIST_FILE = "radioTests/radioTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -422,7 +421,6 @@
 		9B9741AB1792833000EDFB30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/radio.app/radio";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -432,7 +430,6 @@
 				GCC_PREFIX_HEADER = "radio/radio-Prefix.pch";
 				INFOPLIST_FILE = "radioTests/radioTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
