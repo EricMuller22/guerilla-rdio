@@ -10,14 +10,13 @@
 #import <AFNetworking/UIImageView+AFNetworking.h>
 #import <AFNetworking/AFImageRequestOperation.h>
 #import <UIImage+StackBlur.h>
-#import <UIImage+Resize.h>
 #import "PlayerViewController.h"
 
 // a few album art samples
 #define prettyLights @"http://ecx.images-amazon.com/images/I/917Z407djoL._SL1500_.jpg"
 #define bonIver @"http://ecx.images-amazon.com/images/I/81FBQgaJ-nL._SL1425_.jpg"
 #define grizzlyBear @"http://ecx.images-amazon.com/images/I/71cSnMd1aUL._SL1129_.jpg"
-#define albumPreview bonIver
+#define albumPreview prettyLights
 #define url [NSURL URLWithString:albumPreview]
 
 @interface AlbumViewController ()
@@ -40,6 +39,8 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    
     // album art
     _albumView = [[UIImageView alloc] initWithFrame: CGRectMake(36,
                                                                 36,

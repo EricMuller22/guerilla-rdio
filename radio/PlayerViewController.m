@@ -32,6 +32,8 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    
     // playback controls
     _controls = [[UIToolbar alloc] init];
     _controls.frame = CGRectMake(0,
