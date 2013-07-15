@@ -14,8 +14,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [self reloadMediaLibrary];
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.albumVC = [[AlbumViewController alloc] init];
     // children of this vc will inherit its tint color
@@ -25,13 +23,6 @@
     [self.window addSubview:self.albumVC.view];
     [self.window makeKeyAndVisible];
     return YES;
-}
-
-- (void)reloadMediaLibrary
-{
-    // currently this loads everything from the iTunes library
-    MPMediaQuery *everything = [[MPMediaQuery alloc] init];
-    self.library = [everything items];
 }
 
 @end
