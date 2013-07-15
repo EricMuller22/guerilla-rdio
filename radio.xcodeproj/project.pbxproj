@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B96B36E1793C1C500358AC2 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B96B36D1793C1B700358AC2 /* PlayerViewController.m */; };
 		9B9741781792832F00EDFB30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9741771792832F00EDFB30 /* Foundation.framework */; };
 		9B97417A1792832F00EDFB30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9741791792832F00EDFB30 /* CoreGraphics.framework */; };
 		9B97417C1792832F00EDFB30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B97417B1792832F00EDFB30 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* Begin PBXFileReference section */
 		168AB83EA738474FAF7C466C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		362F714538CD41338F13BB82 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		9B96B36C1793C1B700358AC2 /* PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		9B96B36D1793C1B700358AC2 /* PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		9B9741741792832F00EDFB30 /* radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9741771792832F00EDFB30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B9741791792832F00EDFB30 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,8 @@
 		9B97417F1792832F00EDFB30 /* radio */ = {
 			isa = PBXGroup;
 			children = (
+				9B96B36C1793C1B700358AC2 /* PlayerViewController.h */,
+				9B96B36D1793C1B700358AC2 /* PlayerViewController.m */,
 				9B9741881792832F00EDFB30 /* AppDelegate.h */,
 				9B9741891792832F00EDFB30 /* AppDelegate.m */,
 				9BA55B401792AFF50011EAAC /* AlbumViewController.h */,
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B96B36E1793C1C500358AC2 /* PlayerViewController.m in Sources */,
 				9BA55B421792B07C0011EAAC /* AlbumViewController.m in Sources */,
 				9B97418A1792832F00EDFB30 /* AppDelegate.m in Sources */,
 				9BA55B3F1792A5C90011EAAC /* UIColor+Helpers.m in Sources */,
